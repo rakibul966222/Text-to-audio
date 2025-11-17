@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Model Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Model Interface</h1>
+
+    <div class="model-selector">
+      <h2>Select Model</h2>
+      <select id="model-select">
+        <option value="tts">Text-to-Speech (TTS)</option>
+        <option value="text-model">Text-to-Text</option>
+        <option value="image-model">Text-to-Image</option>
+      </select>
+    </div>
+
+    <div class="input-section">
+      <h2>Input</h2>
+      <textarea id="input-text" placeholder="Enter your text here..."></textarea>
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <div class="output-section">
+      <h2>Output</h2>
+      <div id="output-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
